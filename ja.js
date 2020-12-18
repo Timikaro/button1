@@ -73,12 +73,12 @@ const sesi = setInterval(function(){
 
 
 
-//    const Ttutup = document.getElementsByClassName('tutup')[0];
+   const Ttutup = document.getElementsByClassName('tutup')[0];
 
 
-//    const Tnama = document.getElementById('nama');
-//    const namaBar = prompt('Masukan Nama');
+   const Tnama = document.getElementById('nama');
+   const namaBar = prompt('Masukan Nama');
    
    
-//    Tnama.innerHTML = namaBar;
+   Tnama.innerHTML = namaBar;
 
