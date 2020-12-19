@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'Chakra';
+    src: url(ChakraPetch-Regular.ttf) format('truetype');
+}
+@font-face{
+    font-family: 'nunito';
+    src: url(Nunito-SemiBold.ttf) format('truetype');
+}
+body{
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: 0.5s;
+}
+body.dark{
+    background-color: rgb(22, 22, 22);
+    
+    
+}
+
+.checkbox{
+    opacity: .1;
+    position: relative;
+    top: 30px;
+    
+
+}
+
+
+
+@keyframes jam{
+   0%{ 
+       
+       top:-500px;
+       font-size: 1px;
+      transition: 0.5s;
+      transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+       opacity: .4;
+       
+   }50%{
+       /* transform: rotate(360deg); */
+       top: 500px;  
+      
+       
+   }
+   100%{
+       top: 0;
+       transition: 0.5s;
+   
+
+        
+   }
+}
+
+.jamcheck{
+   animation: jam;
+   animation-duration: 3s;
+   position: relative;
+   
+
+   
+}
+
+
+.checkbox:checked + .label #btn {
+    transform: translate(48px) ;
+    
+
+}
+
+.tombol{
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.label{
+    padding: 2px;
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   height: 30px;
+   width: 80px;
+   border-radius: 40px;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+   box-shadow: 0px -3px 4px white,
+               inset 0px 3px 4px black,
+               inset 0px -3px 4px white,
+               0px 3px 4px black
+
+    
+
+ 
+   
+
+}
+
+.label.boxShadow{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px -2px 2px white,
+    inset 0px 3px 4px black,
+    inset 
+    0px 3px 4px 2px white,
+    0px 3px 4px 4px black
+    
+
+}
+
+#btn{
+    background-color: rgb(29, 29, 29);
+    padding: 13px;
+    border-radius: 50%;
+    left: 5px;
+    transition: 0.9s;
+    transition-timing-function: cubic-bezier(0,1.34,1,-0.08);
+    position: absolute;
+   
+    
+}
+
+.g1, .g2{
+    padding: 8px;
+    height: 20px;
+    width: 20px;
+  
+    
+   
+}
+
+                /* jam */
+
+.container {
+   
+    padding: 10px 0;
+    position: absolute;
+    display: flex;
+    width: 120px;
+    position: absolute;
+    justify-content: center;
+    font-family: 'nunito';
+    font-size: 100px;
+    
+    
+}
+#jam{
+    font-size: 200px;
+    font-family: 'Chakra' ;
+}
+
+.text{
+    
+    position: absolute;
+    top: 120px;
+    transition: 0.5s;
+    
+}
+h1{
+    font-size: 40px;
+    font-family: 'nunito';
+    letter-spacing: 4px;
+    
+    
+}
+.checkboxh1{
+    color: rgb(255, 255, 255)5, 255, 255);
+    font-family: Chakra;
+}
+
+
+
+
+@media (max-width: 600px){
+    body{
+        background-color: black;
+        background-image: url(hp1.png);
+        color: white;
+        background-size: 200px;
+        background-repeat: no-repeat;
+        position: relative;
+        background-position: 50% 50%;
+    
+    }
+
+    .tombol{
+        top: 70%;
+        left: 40%;
+       
+        
+    }
+    .label{
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px -2px 2px white,
+    inset 0px 3px 4px black,
+    inset 0px -3px 4px  rgb(255, 255, 255),
+    0px 3px 2px  rgb(0, 0, 0);
+    
+    }
+    #btn{
+        background-color: rgb(54, 54, 54);
+        border: .8px solid rgba(252, 244, 244, 0.7);
+        box-shadow: 0 0 2px 1px rgb(83, 83, 83);
+    }
+
+
+    .text{
+        top: 150px;
+    }
+    
+    h1{
+        font-size: 25px;
+        
+    }
+    #jam{
+        font-size: 100px;
+    }
+}
